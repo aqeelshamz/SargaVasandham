@@ -11,6 +11,11 @@ $lightGray: #f3f3f3;
     font-family: "Lexend", sans-serif;
 }
 
+body{
+    display: flex;
+    justify-content: center;
+}
+
 nav {
     position: fixed;
     top: 0;
@@ -63,6 +68,8 @@ nav {
 }
 
 .main {
+    max-width: 1800px;
+    width: 80%;
     margin: 5rem;
     margin-top: 10rem;
     padding: 4rem;
