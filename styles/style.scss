@@ -1,0 +1,152 @@
+$blue: #205398;
+$lightBlue: #eef2f7;
+$textBlue: #86a1c7;
+$gray: #707070;
+$lightGray: #f3f3f3;
+
+* {
+    margin: 0;
+    padding: 0;
+    display: block;
+    font-family: "Lexend", sans-serif;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    background: white;
+    padding: 2rem 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .logo {
+        width: 8rem;
+    }
+    .menu ul {
+        position: sticky;
+        display: flex;
+        a {
+            margin-right: 2rem;
+            text-decoration: none;
+            font-size: 1.2rem;
+            color: $blue;
+            font-weight: 500;
+        }
+    }
+    button {
+        display: none;
+        background: transparent;
+        border: 0;
+        cursor: pointer;
+        i {
+            color: $blue;
+        }
+    }
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.hide {
+    opacity: 0;
+}
+
+.main {
+    margin: 5rem;
+    margin-top: 10rem;
+    padding: 4rem;
+    border: 2px solid $lightGray;
+    border-radius: 2rem;
+    .left {
+        margin-right: 4rem;
+    }
+    h1 {
+        color: $blue;
+        font-weight: 600;
+    }
+    p {
+        color: $textBlue;
+    }
+    input[type="text"] {
+        background: $lightBlue;
+        border: 0;
+        width: 25rem;
+        padding: 1rem 1rem;
+        outline: 0;
+        font-size: 1.2rem;
+        color: $blue;
+        border-radius: 1rem;
+        box-sizing: border-box;
+    }
+    input[type="button"] {
+        width: 100%;
+        padding: 1rem 1rem;
+        background: #205398;
+        color: white;
+        border-radius: 1rem;
+        border: 0;
+        cursor: pointer;
+        font-weight: 700;
+        font-size: 1.2rem;
+        transition: 0.2s;
+    }
+    input[type="button"]:hover {
+        transform: scale(1.02);
+    }
+    input[type="button"]:active {
+        transform: scale(0.98);
+    }
+    .field {
+        margin: 2rem 0;
+        p {
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+title {
+    display: none;
+}
+
+@media (max-width: 1200px) {
+    nav {
+        padding: 1rem 2rem;
+        .menu {
+            button {
+                display: block;
+            }
+            ul {
+                display: none;
+            }
+        }
+    }
+    .main {
+        margin: 2.5rem;
+        margin-top: 8rem;
+        padding: 2rem;
+        .left {
+            margin-right: 0;
+        }
+        input[type="text"] {
+            width: 100%;
+        }
+        input[type="button"] {
+            width: 100%;
+        }
+        .row {
+            justify-content: center;
+            flex-direction: column;
+        }
+    }
+}
