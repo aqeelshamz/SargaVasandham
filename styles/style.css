@@ -112,7 +112,7 @@ nav button i {
   color: #86a1c7;
 }
 
-.main input[type="text"], .main input[type="file"], .main input[type="date"], .main select {
+.main input[type="text"], .main input[type="file"], .main input[type="date"], .main input[type="tel"], .main select {
   background: #eef2f7;
   border: 0;
   width: 30rem;
@@ -180,7 +180,7 @@ title {
   .main .left {
     margin-right: 0;
   }
-  .main input[type="text"], .main input[type="file"], .main input[type="date"], .main select {
+  .main input[type="text"], .main input[type="file"], .main input[type="date"], .main input[type="tel"], .main select {
     width: 100%;
   }
   .main input[type="button"] {

@@ -85,7 +85,7 @@ nav {
     p {
         color: $textBlue;
     }
-    input[type="text"], input[type="file"],input[type="date"], select {
+    input[type="text"], input[type="file"],input[type="date"],input[type="tel"], select {
         background: $lightBlue;
         border: 0;
         width: 30rem;
@@ -146,7 +146,7 @@ title {
         .left {
             margin-right: 0;
         }
-        input[type="text"],input[type="file"],input[type="date"], select {
+        input[type="text"],input[type="file"],input[type="date"],input[type="tel"], select {
             width: 100%;
         }
         input[type="button"] {
