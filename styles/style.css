@@ -180,7 +180,7 @@ title {
   .main .left {
     margin-right: 0;
   }
-  .main input[type="text"] {
+  .main input[type="text"], .main input[type="file"], .main select {
     width: 100%;
   }
   .main input[type="button"] {

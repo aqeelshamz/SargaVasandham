@@ -146,7 +146,7 @@ title {
         .left {
             margin-right: 0;
         }
-        input[type="text"] {
+        input[type="text"],input[type="file"], select {
             width: 100%;
         }
         input[type="button"] {
