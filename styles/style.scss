@@ -85,7 +85,7 @@ nav {
     p {
         color: $textBlue;
     }
-    input[type="text"] {
+    input[type="text"], input[type="file"], select {
         background: $lightBlue;
         border: 0;
         width: 30rem;

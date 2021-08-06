@@ -112,7 +112,7 @@ nav button i {
   color: #86a1c7;
 }
 
-.main input[type="text"] {
+.main input[type="text"], .main input[type="file"], .main select {
   background: #eef2f7;
   border: 0;
   width: 30rem;
