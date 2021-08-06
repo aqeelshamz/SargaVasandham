@@ -126,6 +126,7 @@ nav button i {
 }
 
 .main input[type="button"] {
+  outline: 0;
   width: 100%;
   padding: 1rem 1rem;
   background: #205398;
