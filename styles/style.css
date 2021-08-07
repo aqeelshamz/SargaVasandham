@@ -5,6 +5,10 @@
   font-family: "Lexend", sans-serif;
 }
 
+script {
+  display: none;
+}
+
 body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -12,6 +16,17 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.star {
+  color: red !important;
+}
+
+label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 8px;
 }
 
 nav {
