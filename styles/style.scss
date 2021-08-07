@@ -21,7 +21,12 @@ body{
 }
 
 .star{
-    color: red;
+    color: red !important;
+}
+
+label{
+    display: flex;
+    margin-bottom: 30px;
 }
 
 nav {
