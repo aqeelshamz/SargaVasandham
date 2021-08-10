@@ -11,7 +11,9 @@ $lightGray: #f3f3f3;
     font-family: "Lexend", sans-serif;
 }
 
-script, style, css {
+script,
+style,
+css {
     display: none !important;
 }
 
@@ -79,6 +81,13 @@ nav {
 
 .hide {
     opacity: 0;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .main {
@@ -156,6 +165,35 @@ title {
     display: none;
 }
 
+table {
+    margin-top: 2.5rem;
+    display: table;
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    display: table-cell;
+    text-align: left;
+    padding: 2rem 4rem;
+    font-size: 1.4rem;
+}
+
+th {
+    background-color: $blue;
+    color: white;
+}
+
+tr {
+    display: table-row;
+}
+
+tr:nth-child(even) {
+    background-color: $lightBlue;
+}
+
 @media (max-width: 1200px) {
     nav {
         padding: 1rem 2rem;
@@ -190,5 +228,13 @@ title {
             justify-content: center;
             flex-direction: column;
         }
+    }
+    td,
+    th {
+        display: table-cell;
+        border: 1px solid $lightBlue;
+        text-align: left;
+        padding: 1rem 2rem;
+        font-size: 1rem;
     }
 }
