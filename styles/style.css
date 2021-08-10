@@ -5,7 +5,7 @@
   font-family: "Lexend", sans-serif;
 }
 
-script {
+script, style {
   display: none !important;
 }
 
@@ -128,7 +128,11 @@ nav button i {
   color: #86a1c7;
 }
 
-.main input[type="text"], .main input[type="file"], .main input[type="date"], .main input[type="tel"], .main select {
+.main input[type="text"],
+.main input[type="file"],
+.main input[type="date"],
+.main input[type="tel"],
+.main select {
   background: #eef2f7;
   border: 0;
   width: 30rem;
@@ -174,6 +178,19 @@ nav button i {
   margin-bottom: 1rem;
 }
 
+.fab {
+  margin-right: 1rem;
+  font-size: 2.5rem;
+  color: #205398;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.fab:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
 title {
   display: none;
 }
@@ -197,7 +214,11 @@ title {
   .main .left {
     margin-right: 0;
   }
-  .main input[type="text"], .main input[type="file"], .main input[type="date"], .main input[type="tel"], .main select {
+  .main input[type="text"],
+  .main input[type="file"],
+  .main input[type="date"],
+  .main input[type="tel"],
+  .main select {
     width: 100%;
   }
   .main input[type="submit"] {

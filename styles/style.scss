@@ -11,21 +11,21 @@ $lightGray: #f3f3f3;
     font-family: "Lexend", sans-serif;
 }
 
-script{
+script, style {
     display: none !important;
 }
 
-body{
+body {
     display: flex;
     justify-content: center;
 }
 
-.star{
+.star {
     margin-left: 3px;
     color: red !important;
 }
 
-label{
+label {
     display: flex;
     margin-bottom: 8px;
 }
@@ -99,7 +99,11 @@ nav {
     p {
         color: $textBlue;
     }
-    input[type="text"], input[type="file"],input[type="date"],input[type="tel"], select {
+    input[type="text"],
+    input[type="file"],
+    input[type="date"],
+    input[type="tel"],
+    select {
         background: $lightBlue;
         border: 0;
         width: 30rem;
@@ -137,6 +141,17 @@ nav {
     }
 }
 
+.fab {
+    margin-right: 1rem;
+    font-size: 2.5rem;
+    color: $blue;
+    transition: 0.2s;
+}
+
+.fab:hover {
+    transform: scale(1.1);
+}
+
 title {
     display: none;
 }
@@ -161,7 +176,11 @@ title {
         .left {
             margin-right: 0;
         }
-        input[type="text"],input[type="file"],input[type="date"],input[type="tel"], select {
+        input[type="text"],
+        input[type="file"],
+        input[type="date"],
+        input[type="tel"],
+        select {
             width: 100%;
         }
         input[type="submit"] {
