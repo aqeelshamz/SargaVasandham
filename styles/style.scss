@@ -49,6 +49,7 @@ nav {
     .menu ul {
         position: sticky;
         display: flex;
+        align-items: center;
         a {
             margin-right: 2rem;
             text-decoration: none;
@@ -98,55 +99,57 @@ nav {
     padding: 4rem;
     border: 2px solid $lightGray;
     border-radius: 2rem;
-    .left {
-        margin-right: 4rem;
-    }
-    h1 {
-        color: $blue;
-        font-weight: 600;
-    }
+}
+
+.left {
+    margin-right: 4rem;
+}
+h1 {
+    color: $blue;
+    font-weight: 600;
+}
+p {
+    color: $textBlue;
+}
+input[type="text"],
+input[type="file"],
+input[type="date"],
+input[type="tel"],
+select {
+    background: $lightBlue;
+    border: 0;
+    width: 30rem;
+    padding: 1rem 1rem;
+    outline: 0;
+    font-size: 1.2rem;
+    color: $blue;
+    border-radius: 1rem;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    outline: 0;
+    width: 100%;
+    padding: 1rem 1rem;
+    background: #205398;
+    color: white;
+    border-radius: 1rem;
+    border: 0;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1.2rem;
+    transition: 0.2s;
+}
+input[type="submit"]:hover {
+    transform: scale(1.02);
+}
+input[type="submit"]:active {
+    transform: scale(0.98);
+}
+.field {
+    margin: 2rem 0;
     p {
-        color: $textBlue;
-    }
-    input[type="text"],
-    input[type="file"],
-    input[type="date"],
-    input[type="tel"],
-    select {
-        background: $lightBlue;
-        border: 0;
-        width: 30rem;
-        padding: 1rem 1rem;
-        outline: 0;
-        font-size: 1.2rem;
-        color: $blue;
-        border-radius: 1rem;
-        box-sizing: border-box;
-    }
-    input[type="submit"] {
-        outline: 0;
-        width: 100%;
-        padding: 1rem 1rem;
-        background: #205398;
-        color: white;
-        border-radius: 1rem;
-        border: 0;
-        cursor: pointer;
-        font-weight: 700;
-        font-size: 1.2rem;
-        transition: 0.2s;
-    }
-    input[type="submit"]:hover {
-        transform: scale(1.02);
-    }
-    input[type="submit"]:active {
-        transform: scale(0.98);
-    }
-    .field {
-        margin: 2rem 0;
-        p {
-            margin-bottom: 1rem;
-        }
+        margin-bottom: 1rem;
     }
 }
 
