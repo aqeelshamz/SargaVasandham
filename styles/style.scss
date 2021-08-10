@@ -110,7 +110,7 @@ nav {
         border-radius: 1rem;
         box-sizing: border-box;
     }
-    input[type="button"] {
+    input[type="submit"] {
         outline: 0;
         width: 100%;
         padding: 1rem 1rem;
@@ -123,10 +123,10 @@ nav {
         font-size: 1.2rem;
         transition: 0.2s;
     }
-    input[type="button"]:hover {
+    input[type="submit"]:hover {
         transform: scale(1.02);
     }
-    input[type="button"]:active {
+    input[type="submit"]:active {
         transform: scale(0.98);
     }
     .field {
@@ -164,7 +164,7 @@ title {
         input[type="text"],input[type="file"],input[type="date"],input[type="tel"], select {
             width: 100%;
         }
-        input[type="button"] {
+        input[type="submit"] {
             width: 100%;
         }
         .row {
