@@ -68,11 +68,21 @@ nav .menu ul {
 }
 
 nav .menu ul a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-right: 2rem;
   text-decoration: none;
   font-size: 1.2rem;
   color: #205398;
   font-weight: 500;
+}
+
+nav .menu ul a i {
+  margin-right: 0.5rem;
 }
 
 nav button {
