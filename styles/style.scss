@@ -106,7 +106,9 @@ nav {
     border-radius: 2rem;
 }
 
-.main .tt-multi-select, .select2-container, .select2{
+.main .tt-multi-select,
+.select2-container,
+.select2 {
     background: #eef2f7 !important;
     border: 0;
     width: 30rem;
@@ -116,13 +118,14 @@ nav {
     color: #205398;
     border-radius: 1rem;
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-  }
-  
-  .main .select2-selection, .select2-container--default .select2-selection--multiple{
+    box-sizing: border-box;
+}
+
+.main .select2-selection,
+.select2-container--default .select2-selection--multiple {
     background-color: #eef2f7 !important;
     border: none !important;
-  }
+}
 
 .grid {
     margin-top: 2rem;
@@ -138,7 +141,7 @@ nav {
     height: 20rem;
     margin-bottom: 1.2rem;
     overflow: hidden;
-    img{
+    img {
         width: auto;
         height: auto;
     }
