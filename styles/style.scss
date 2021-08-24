@@ -32,6 +32,35 @@ label {
     margin-bottom: 8px;
 }
 
+.mobilemenu{
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    ul{
+        height: 90vh;
+        justify-content: space-evenly;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        li{
+           a{
+               text-decoration: none;
+               font-size: 1.5rem;
+               color: white;
+           }
+           i{
+               color: white;
+               margin-right: 1rem;
+           } 
+        }
+    }
+}
+
 nav {
     position: fixed;
     top: 0;
@@ -46,7 +75,7 @@ nav {
     .logo {
         width: 8rem;
     }
-    .menu ul {
+     .menu ul {
         position: sticky;
         display: flex;
         align-items: center;
@@ -295,5 +324,8 @@ tr:nth-child(even) {
         text-align: left;
         padding: 1rem 2rem;
         font-size: 1rem;
+    }
+    .fab{
+        margin-top: 1rem;
     }
 }

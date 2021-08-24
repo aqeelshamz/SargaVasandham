@@ -32,6 +32,45 @@ label {
   margin-bottom: 8px;
 }
 
+.mobilemenu {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  background: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+}
+
+.mobilemenu ul {
+  height: 90vh;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mobilemenu ul li a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.mobilemenu ul li i {
+  color: white;
+  margin-right: 1rem;
+}
+
 nav {
   position: fixed;
   top: 0;
@@ -366,6 +405,9 @@ tr:nth-child(even) {
     text-align: left;
     padding: 1rem 2rem;
     font-size: 1rem;
+  }
+  .fab {
+    margin-top: 1rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

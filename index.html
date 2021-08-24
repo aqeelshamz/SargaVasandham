@@ -10,8 +10,23 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#menubtn").click(function () {
+                $(".mobilemenu").css("display", "block");
+                $(".main").hide();
+            });
+            $("#closebtn").click(function () {
+                $(".mobilemenu").css("display", "none");
+                $(".main").show();
+            });
+        });
+    </script>
     <title>Home</title>
 </head>
 
@@ -20,16 +35,34 @@
     <nav>
         <img class="logo" src="./assets/logo.png" alt="">
         <div class="menu">
-            <button><i class="material-icons">menu</i></button>
+            <button><i id="menubtn" class="material-icons">menu</i></button>
             <ul>
                 <li><a href="./index.html"><i class="fas fa-home"></i>HOME</a></li>
                 <li><a href="./about.html"><i class="fas fa-info-circle"></i>ABOUT</a></li>
                 <li><a href="./scoreboard.html"><i class="fas fa-trophy"></i>SCOREBOARD</a></li>
                 <li><a href="./gallery.html"><i class="far fa-images"></i>GALLERY</a></li>
-                <input onclick="location.href='./registration.html'" style="font-weight: normal;" type="submit" value="REGISTER">
+                <input onclick="location.href='./registration.html'" style="font-weight: normal;" type="submit"
+                    value="REGISTER">
             </ul>
         </div>
     </nav>
+
+    <div class="mobilemenu show" style="padding: 8%; box-sizing: border-box;">
+        <div style="justify-content: space-between;display: flex;">
+            <p></p> <button style="background: black; border: 0; cursor: pointer;"><i id="closebtn"
+                    class="material-icons" style="color: white; font-size: 2rem;">close</i></button>
+        </div>
+        <div class="column">
+            <ul>
+                <li><a href="./index.html"><i class="fas fa-home"></i>HOME</a></li>
+                <li><a href="./about.html"><i class="fas fa-info-circle"></i>ABOUT</a></li>
+                <li><a href="./scoreboard.html"><i class="fas fa-trophy"></i>SCOREBOARD</a></li>
+                <li><a href="./gallery.html"><i class="far fa-images"></i>GALLERY</a></li>
+                <input onclick="location.href='./login'" style="font-weight: normal;" type="submit"
+                    value="LOGIN">
+            </ul>
+        </div>
+    </div>
 
     <div class="main">
         <div class="column">
@@ -149,11 +182,13 @@
         </div>
     </div>
 </body>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
-    <script>
-        $(document).ready(function() {
-    $('.tt-multi-select').select2();
-});
-    </script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.tt-multi-select').select2();
+    });
+</script>
+
 </html>
